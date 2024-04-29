@@ -10,16 +10,14 @@ import SwiftUI
 struct ContentView: View {
     
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
-    
-    let haptics = UIImpactFeedbackGenerator(style: .medium)
-    
     @State private var isGridViewActive = false
     @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
     @State private var gridColumn: Int = 1
     @State private var toolbarIcon: String = "square.grid.2x2"
     
-    // MARK: - FUNCTION GRID SWITCH
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
     
+    // MARK: - FUNCTION GRID SWITCH
     func gridSwitch() {
         
         withAnimation(.easeIn) {
@@ -52,7 +50,9 @@ struct ContentView: View {
                         
                         
                         ForEach(animals) { animal in
-                            AnimalListItemView(animal: animal)
+                            NavigationLink(destination: AnimalDetailView(animal: animal)){
+                                AnimalListItemView(animal: animal)
+                            }
                         }
                     }
                     .listStyle(.plain)
@@ -60,7 +60,9 @@ struct ContentView: View {
                     ScrollView(showsIndicators: false) {
                         LazyVGrid(columns: gridLayout, alignment: .center, spacing: 12) {
                             ForEach(animals) { animal in
-                                AnimalGridItemView(animal: animal)
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                }
                             }
                         }
                     }
@@ -76,7 +78,6 @@ struct ContentView: View {
                         Button {
                             print("List View is Activated")
                             isGridViewActive = false
-                            
                         } label: {
                             Image(systemName: "square.fill.text.grid.1x2")
                                 .font(.title2)
