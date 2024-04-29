@@ -28,6 +28,9 @@
 		52F3DA6C2BDF35B6001354E5 /* ostrich.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 52F3DA612BDF35B6001354E5 /* ostrich.mp4 */; };
 		52F3DA6D2BDF35B6001354E5 /* rhino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 52F3DA622BDF35B6001354E5 /* rhino.mp4 */; };
 		52F3DA6E2BDF35B6001354E5 /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 52F3DA632BDF35B6001354E5 /* zebra.mp4 */; };
+		52F3DA722BDF37EC001354E5 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3DA712BDF37EC001354E5 /* CoverImageView.swift */; };
+		52F3DA742BDF38F4001354E5 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3DA732BDF38F4001354E5 /* CoverImageModel.swift */; };
+		52F3DA772BDF39C1001354E5 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3DA762BDF39C1001354E5 /* Bundle+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		52F3DA612BDF35B6001354E5 /* ostrich.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ostrich.mp4; sourceTree = "<group>"; };
 		52F3DA622BDF35B6001354E5 /* rhino.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rhino.mp4; sourceTree = "<group>"; };
 		52F3DA632BDF35B6001354E5 /* zebra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zebra.mp4; sourceTree = "<group>"; };
+		52F3DA712BDF37EC001354E5 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		52F3DA732BDF38F4001354E5 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		52F3DA762BDF39C1001354E5 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +128,10 @@
 		52F3DA222BDF3289001354E5 /* Animalia */ = {
 			isa = PBXGroup;
 			children = (
-				52F3DA502BDF32AF001354E5 /* Model */,
+				52F3DA752BDF3985001354E5 /* Extensions */,
+				52F3DA6F2BDF37A1001354E5 /* Modules */,
 				52F3DA4F2BDF32AA001354E5 /* App */,
-				52F3DA4E2BDF32A3001354E5 /* View */,
+				52F3DA4E2BDF32A3001354E5 /* Main */,
 				52F3DA4D2BDF3299001354E5 /* Resources */,
 				52F3DA292BDF328A001354E5 /* Preview Content */,
 			);
@@ -166,12 +173,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		52F3DA4E2BDF32A3001354E5 /* View */ = {
+		52F3DA4E2BDF32A3001354E5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				52F3DA252BDF3289001354E5 /* ContentView.swift */,
 			);
-			path = View;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		52F3DA4F2BDF32AA001354E5 /* App */ = {
@@ -185,6 +192,7 @@
 		52F3DA502BDF32AF001354E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52F3DA732BDF38F4001354E5 /* CoverImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +223,31 @@
 				52F3DA632BDF35B6001354E5 /* zebra.mp4 */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		52F3DA6F2BDF37A1001354E5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				52F3DA502BDF32AF001354E5 /* Model */,
+				52F3DA702BDF37B6001354E5 /* Screen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		52F3DA702BDF37B6001354E5 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				52F3DA712BDF37EC001354E5 /* CoverImageView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		52F3DA752BDF3985001354E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52F3DA762BDF39C1001354E5 /* Bundle+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +395,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F3DA262BDF3289001354E5 /* ContentView.swift in Sources */,
+				52F3DA722BDF37EC001354E5 /* CoverImageView.swift in Sources */,
+				52F3DA772BDF39C1001354E5 /* Bundle+Ext.swift in Sources */,
 				52F3DA242BDF3289001354E5 /* AnimaliaApp.swift in Sources */,
+				52F3DA742BDF38F4001354E5 /* CoverImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
