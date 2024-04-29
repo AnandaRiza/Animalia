@@ -94,9 +94,10 @@
 		52F3DA222BDF3289001354E5 /* Animalia */ = {
 			isa = PBXGroup;
 			children = (
-				52F3DA232BDF3289001354E5 /* AnimaliaApp.swift */,
-				52F3DA252BDF3289001354E5 /* ContentView.swift */,
-				52F3DA272BDF328A001354E5 /* Assets.xcassets */,
+				52F3DA502BDF32AF001354E5 /* Model */,
+				52F3DA4F2BDF32AA001354E5 /* App */,
+				52F3DA4E2BDF32A3001354E5 /* View */,
+				52F3DA4D2BDF3299001354E5 /* Resources */,
 				52F3DA292BDF328A001354E5 /* Preview Content */,
 			);
 			path = Animalia;
@@ -125,6 +126,37 @@
 				52F3DA402BDF328A001354E5 /* AnimaliaUITestsLaunchTests.swift */,
 			);
 			path = AnimaliaUITests;
+			sourceTree = "<group>";
+		};
+		52F3DA4D2BDF3299001354E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52F3DA272BDF328A001354E5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52F3DA4E2BDF32A3001354E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52F3DA252BDF3289001354E5 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52F3DA4F2BDF32AA001354E5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52F3DA232BDF3289001354E5 /* AnimaliaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52F3DA502BDF32AF001354E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
