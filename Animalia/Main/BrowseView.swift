@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BrowseView: View {
     
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
     @State private var isGridViewActive = false
@@ -106,5 +106,5 @@ struct ContentView: View {
 
 #Preview {
     
-    ContentView()
+    BrowseView()
 }
