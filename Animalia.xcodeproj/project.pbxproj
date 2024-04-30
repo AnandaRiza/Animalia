@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524F60812BE08F5600FC3B0A /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60802BE08F5600FC3B0A /* VideoModel.swift */; };
+		524F60842BE0905E00FC3B0A /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60832BE0905E00FC3B0A /* VideoPlayerHelper.swift */; };
+		524F60862BE0920800FC3B0A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60852BE0920800FC3B0A /* VideoPlayerView.swift */; };
+		524F60882BE096AC00FC3B0A /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60872BE096AC00FC3B0A /* VideoListItemView.swift */; };
+		524F608A2BE098F900FC3B0A /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60892BE098F900FC3B0A /* WatchView.swift */; };
 		52F3DA242BDF3289001354E5 /* AnimaliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3DA232BDF3289001354E5 /* AnimaliaApp.swift */; };
 		52F3DA262BDF3289001354E5 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3DA252BDF3289001354E5 /* BrowseView.swift */; };
 		52F3DA282BDF328A001354E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F3DA272BDF328A001354E5 /* Assets.xcassets */; };
@@ -63,6 +68,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		524F60802BE08F5600FC3B0A /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		524F60832BE0905E00FC3B0A /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		524F60852BE0920800FC3B0A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		524F60872BE096AC00FC3B0A /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
+		524F60892BE098F900FC3B0A /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		52F3DA202BDF3289001354E5 /* Animalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F3DA232BDF3289001354E5 /* AnimaliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimaliaApp.swift; sourceTree = "<group>"; };
 		52F3DA252BDF3289001354E5 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
@@ -154,8 +164,32 @@
 		524F607D2BE08DE900FC3B0A /* Watch */ = {
 			isa = PBXGroup;
 			children = (
+				524F60852BE0920800FC3B0A /* VideoPlayerView.swift */,
+				524F60872BE096AC00FC3B0A /* VideoListItemView.swift */,
 			);
 			path = Watch;
+			sourceTree = "<group>";
+		};
+		524F607E2BE08E9600FC3B0A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		524F607F2BE08EC100FC3B0A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		524F60822BE0903600FC3B0A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				524F60832BE0905E00FC3B0A /* VideoPlayerHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		52F3DA172BDF3288001354E5 = {
@@ -181,13 +215,15 @@
 		52F3DA222BDF3289001354E5 /* Animalia */ = {
 			isa = PBXGroup;
 			children = (
+				524F60822BE0903600FC3B0A /* Helper */,
 				52F3DA782BDF3FF0001354E5 /* Info.plist */,
-				52F3DA752BDF3985001354E5 /* Extensions */,
-				52F3DA6F2BDF37A1001354E5 /* Modules */,
 				52F3DA4F2BDF32AA001354E5 /* App */,
+				52F3DA752BDF3985001354E5 /* Extensions */,
 				52F3DA4E2BDF32A3001354E5 /* Main */,
-				52F3DA4D2BDF3299001354E5 /* Resources */,
+				52F3DA6F2BDF37A1001354E5 /* Modules */,
 				52F3DA292BDF328A001354E5 /* Preview Content */,
+				52F3DA4D2BDF3299001354E5 /* Resources */,
+				524F607F2BE08EC100FC3B0A /* Services */,
 			);
 			path = Animalia;
 			sourceTree = "<group>";
@@ -232,6 +268,7 @@
 			children = (
 				52F3DA252BDF3289001354E5 /* BrowseView.swift */,
 				52F3DA822BDF6078001354E5 /* MainView.swift */,
+				524F60892BE098F900FC3B0A /* WatchView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -244,13 +281,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		52F3DA502BDF32AF001354E5 /* Model */ = {
+		52F3DA502BDF32AF001354E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				52F3DA732BDF38F4001354E5 /* CoverImageModel.swift */,
 				52F3DA7A2BDF43DA001354E5 /* AnimalModel.swift */,
+				524F60802BE08F5600FC3B0A /* VideoModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		52F3DA552BDF357C001354E5 /* Data */ = {
@@ -284,7 +322,8 @@
 		52F3DA6F2BDF37A1001354E5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				52F3DA502BDF32AF001354E5 /* Model */,
+				524F607E2BE08E9600FC3B0A /* ViewModels */,
+				52F3DA502BDF32AF001354E5 /* Models */,
 				52F3DA702BDF37B6001354E5 /* Screen */,
 			);
 			path = Modules;
@@ -461,6 +500,8 @@
 				52F3DA892BDF7F62001354E5 /* insetGalleryView.swift in Sources */,
 				52F3DA8F2BDF8E2B001354E5 /* CLLocation+Ext.swift in Sources */,
 				52F3DA262BDF3289001354E5 /* BrowseView.swift in Sources */,
+				524F60882BE096AC00FC3B0A /* VideoListItemView.swift in Sources */,
+				524F60842BE0905E00FC3B0A /* VideoPlayerHelper.swift in Sources */,
 				52F3DA7B2BDF43DA001354E5 /* AnimalModel.swift in Sources */,
 				52F3DA722BDF37EC001354E5 /* CoverImageView.swift in Sources */,
 				52F3DA832BDF6078001354E5 /* MainView.swift in Sources */,
@@ -468,11 +509,14 @@
 				52F3DA772BDF39C1001354E5 /* Bundle+Ext.swift in Sources */,
 				52F3DA872BDF7CB3001354E5 /* HeadingView.swift in Sources */,
 				52F3DA912BDF945F001354E5 /* ExternalWebLinkView.swift in Sources */,
+				524F608A2BE098F900FC3B0A /* WatchView.swift in Sources */,
 				52F3DA242BDF3289001354E5 /* AnimaliaApp.swift in Sources */,
+				524F60812BE08F5600FC3B0A /* VideoModel.swift in Sources */,
 				52F3DA8D2BDF8B4C001354E5 /* insetMapView.swift in Sources */,
 				52F3DA742BDF38F4001354E5 /* CoverImageModel.swift in Sources */,
 				52F3DA7D2BDF44E8001354E5 /* AnimalListItemView.swift in Sources */,
 				52F3DA812BDF5D20001354E5 /* AnimalGridItemView.swift in Sources */,
+				524F60862BE0920800FC3B0A /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
