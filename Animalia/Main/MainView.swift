@@ -20,12 +20,12 @@ struct MainView: View {
                     Label("Watch", systemImage: "play.rectangle")
                 }
             
-            Text("Map View")
+            MapView()
                 .tabItem {
                     Label("Locations", systemImage: "map")
                 }
             
-            MotionAnimationView()
+            GalleryView()
                 .tabItem {
                     Label("Gallery", systemImage: "photo")
                 }
