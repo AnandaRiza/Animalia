@@ -12,6 +12,8 @@
 		524F60862BE0920800FC3B0A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60852BE0920800FC3B0A /* VideoPlayerView.swift */; };
 		524F60882BE096AC00FC3B0A /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60872BE096AC00FC3B0A /* VideoListItemView.swift */; };
 		524F608A2BE098F900FC3B0A /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60892BE098F900FC3B0A /* WatchView.swift */; };
+		524F608C2BE09DDE00FC3B0A /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F608B2BE09DDE00FC3B0A /* GalleryView.swift */; };
+		524F608F2BE09E2800FC3B0A /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F608E2BE09E2800FC3B0A /* MotionAnimationView.swift */; };
 		52F3DA242BDF3289001354E5 /* AnimaliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3DA232BDF3289001354E5 /* AnimaliaApp.swift */; };
 		52F3DA262BDF3289001354E5 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3DA252BDF3289001354E5 /* BrowseView.swift */; };
 		52F3DA282BDF328A001354E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F3DA272BDF328A001354E5 /* Assets.xcassets */; };
@@ -73,6 +75,8 @@
 		524F60852BE0920800FC3B0A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		524F60872BE096AC00FC3B0A /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		524F60892BE098F900FC3B0A /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
+		524F608B2BE09DDE00FC3B0A /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		524F608E2BE09E2800FC3B0A /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		52F3DA202BDF3289001354E5 /* Animalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F3DA232BDF3289001354E5 /* AnimaliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimaliaApp.swift; sourceTree = "<group>"; };
 		52F3DA252BDF3289001354E5 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
@@ -192,6 +196,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		524F608D2BE09DFF00FC3B0A /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				524F608E2BE09E2800FC3B0A /* MotionAnimationView.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		52F3DA172BDF3288001354E5 = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +281,7 @@
 				52F3DA252BDF3289001354E5 /* BrowseView.swift */,
 				52F3DA822BDF6078001354E5 /* MainView.swift */,
 				524F60892BE098F900FC3B0A /* WatchView.swift */,
+				524F608B2BE09DDE00FC3B0A /* GalleryView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -332,6 +345,7 @@
 		52F3DA702BDF37B6001354E5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				524F608D2BE09DFF00FC3B0A /* Gallery */,
 				524F607D2BE08DE900FC3B0A /* Watch */,
 				524F607C2BE08D5800FC3B0A /* Browse */,
 				52F3DA7C2BDF44E8001354E5 /* AnimalListItemView.swift */,
@@ -511,10 +525,12 @@
 				52F3DA912BDF945F001354E5 /* ExternalWebLinkView.swift in Sources */,
 				524F608A2BE098F900FC3B0A /* WatchView.swift in Sources */,
 				52F3DA242BDF3289001354E5 /* AnimaliaApp.swift in Sources */,
+				524F608C2BE09DDE00FC3B0A /* GalleryView.swift in Sources */,
 				524F60812BE08F5600FC3B0A /* VideoModel.swift in Sources */,
 				52F3DA8D2BDF8B4C001354E5 /* insetMapView.swift in Sources */,
 				52F3DA742BDF38F4001354E5 /* CoverImageModel.swift in Sources */,
 				52F3DA7D2BDF44E8001354E5 /* AnimalListItemView.swift in Sources */,
+				524F608F2BE09E2800FC3B0A /* MotionAnimationView.swift in Sources */,
 				52F3DA812BDF5D20001354E5 /* AnimalGridItemView.swift in Sources */,
 				524F60862BE0920800FC3B0A /* VideoPlayerView.swift in Sources */,
 			);

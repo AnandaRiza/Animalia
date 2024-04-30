@@ -25,7 +25,7 @@ struct MainView: View {
                     Label("Locations", systemImage: "map")
                 }
             
-            Text("Gallery")
+            MotionAnimationView()
                 .tabItem {
                     Label("Gallery", systemImage: "photo")
                 }
